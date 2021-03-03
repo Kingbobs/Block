@@ -16,7 +16,7 @@ class EventListener implements Listener{
 	 * @ignoreCancelled true
 	 */
 	public function blockBreak(BlockBreakEvent $e){
-		// $nb = $this->plugin->getServer()->getPluginManager()->getPlugin("AddNoteBlock");
+	  $nb = $this->plugin->getServer()->getPluginManager()->getPlugin("AddNoteBlock");
 		$p = $e->getPlayer();
 		$b = $e->getBlock();
 		if($this->plugin->blockTourney() == true){
